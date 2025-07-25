@@ -41,6 +41,7 @@ const BookDetail = () => {
           <img
             src={`https://covers.openlibrary.org/b/id/${book.covers[0]}-L.jpg`}
             alt={book.title}
+            className="detailsBookCover"
             style={{ marginTop: "1rem", borderRadius: "10px" }}
           />
         )}

@@ -44,6 +44,7 @@ export default function Dashboard() {
 
   return (
     <div className="main-content">
+      <h1>📚 Search Old Fantasy Books</h1>
       <div className="controls">
         <SearchBar value={search} onChange={setSearch} />
         <Filter value={yearFilter} onChange={setYearFilter} options={yearRanges} />
