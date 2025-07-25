@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
 const BookDetail = () => {
-  const { key } = useParams();
+  const { key,title } = useParams();
   const [book, setBook] = useState(null);
 
   useEffect(() => {

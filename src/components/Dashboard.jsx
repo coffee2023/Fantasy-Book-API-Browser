@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import BookList from "./BookList";
 import SearchBar from "./SearchBar";
 import Filter from "./Filter";
-import SummaryStats from "./SummaryStatus";
+import SummaryStats from "./SummaryStats";
 import Charts from "./Charts";
 
 export default function Dashboard() {

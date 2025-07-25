@@ -8,13 +8,11 @@ const getCoverURL = (coverId) =>
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 export default function BookList({ books }) {
   return (
     <div className="book-list">
       {books.map((book, i) => (
-        <Link key={i} to={`/book/${book.key.replace('/works/', '')}`} className="book-item">
+        <Link key={i} to={`/book/${book.key.replace('/works/', '')}/${encodeURIComponent(book.title.toLowerCase().replace(/\s+/g, "-"))}`} className="book-item">
           <div className="book-card">
             <img src={getCoverURL(book.cover_i)} alt={book.title} />
             <h3>{book.title}</h3>

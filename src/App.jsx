@@ -7,11 +7,11 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="App fantasy-background">
+      <div>
         <Sidebar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/book/:key" element={<BookDetail />} />
+          <Route path="/book/:key/:title" element={<BookDetail />} />
         </Routes>
       </div>
     </Router>
